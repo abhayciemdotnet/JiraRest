@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+var settings = {
+  "url": "http://192.168.231.133:8080/rest/api/2/issue/createmeta",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "Basic YWJoYXk6RGVtb0AxMjM0NQ==",
+	"content-type": "application/json",
+	
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
